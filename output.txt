@@ -1,0 +1,2 @@
+query_term	query_type	query_time	total_hits	website_no	no_of_results	database
+kajalwaldiya@gmail.com	email	0.00035	2	2	1	MySpace.com June-2013
