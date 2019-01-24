@@ -2,20 +2,8 @@ from django.shortcuts import HttpResponse
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-# import lxml.html as lh
-from lxml.html import fromstring
-
 import requests
-
-from scrapy.http import FormRequest
-# from scrapy.http import Request
-
-import mechanize
-
-from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
-
-import lassie
 from itertools import cycle
 import traceback
 
@@ -83,7 +71,7 @@ class Dashboard(TemplateView):
 
 
 def save_output(result,query_term,query_type):
-	
+
 	file_name = "output.txt"
 	is_exists = os.path.exists(file_name)
 	query_time = re.findall(r'Query Time: ([0-9]+(?:\.[0-9]+)?)(?:\s)',result["query_time"])
